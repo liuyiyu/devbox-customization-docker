@@ -13,4 +13,5 @@ setupTasks:
   - task: install-package
     inputs:
       package: azure-cli
+  - task: customize-clonerepo
   - task: customize
