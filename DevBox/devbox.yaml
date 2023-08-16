@@ -3,4 +3,11 @@ image: MicrosoftVisualStudio_visualstudioplustools_vs-2022-ent-general-win11-m36
 hostInformation: general_i_8c32gb256ssd_v2
 supportsHibernation: false
 setupTasks:
+  - task: chocolatey
+  - task: install-package
+    inputs:
+      package: git.install
+  - task: install-package
+    inputs:
+      package: vscode
   - task: customize
