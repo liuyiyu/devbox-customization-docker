@@ -14,4 +14,10 @@ setupTasks:
     inputs:
       package: azure-cli
   - task: customize-clonerepo
-  - task: customize
+  - task: winget
+    inputs:
+      package: 'Docker.DockerDesktop'
+      runAsUser: true
+  - task: restart
+    inputs:
+      runAsUser: true
